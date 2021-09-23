@@ -1,0 +1,57 @@
+body{
+    padding-top: 70px;
+    width: 975px;
+    margin: 0px auto;
+}
+
+#nav{
+    background-color: white;
+    position: fixed;
+    top: 0;
+    width: 975px;
+    border: 1px solid rgba(228, 228, 228, 0.7);
+    height: 54px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#nav > div{
+    align-self: center;
+}
+
+.icons{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.icons > img{
+    height: 22px;
+    margin: 0px 24px 0px 0px;
+    align-self: center;
+    cursor: pointer;
+}
+
+#profile_logo{
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+.logo{
+    cursor: pointer;
+}
+
+#feed{
+    width: 600px;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+article{
+    border: 1px solid rgba(228, 228, 228, 0.7);
+}
+
+article > img{
+    width: 600px;
+    height: 600px;
+}
