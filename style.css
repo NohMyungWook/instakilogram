@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  text-decoration: none;
+}
+
+a:visited {
+  color: black;
+}
+
+a:active {
+  color: black;
+}
+
+.backG {
+  background-color: rgb(248, 248, 248);
+}
+
+.main {
+  display: flex;
+  width: 945px;
+}
+
+.mainCon {
+  margin-top: 75px;
+  margin-left: 25px;
+  width: 350px;
+  height: 375px;
+  background-color: white;
+  text-align: center;
+  border: 1px solid rgb(190, 190, 190);
+}
+
+.title {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.signUp {
+  display: flex;
+  width: 350px;
+  height: 50px;
+  margin-top: 75px;
+  padding-top: 25px;
+  background-color: white;
+  border: 1px solid rgb(190, 190, 190);
+  text-align: center;
+
+  font-size: 14px;
+}
+
+.idF {
+  text-align: center;
+  padding-left: 80px;
+}
+
+.signBF {
+  font-weight: bold;
+  color: rgb(73, 154, 247);
+  text-align: center;
+}
+
+.blueP {
+  color: rgb(42, 42, 143);
+  font-size: smaller;
+  padding-top: 15px;
+}
+
+.pwImg {
+  margin-top: 15px;
+}
+
+.grayF {
+  color: rgb(134, 134, 134);
+  /* font-weight: lighter; */
+  font-size: 14px;
+}
+
+.container {
+  margin-top: 125px;
+  width: 400px;
+  height: 525px;
+  background-color: white;
+  text-align: center;
+  border: 1px solid rgb(190, 190, 190);
+  /* border-color: lightslategray; */
+}
+
+.inputCon {
+  margin-top: 15px;
+  border-radius: 5px;
+  width: 275px;
+  height: 35px;
+  border: 1px solid;
+  background-color: rgb(248, 248, 248);
+  color: rgb(202, 202, 202);
+  padding-left: 10px;
+}
+
+.blueBtn {
+  margin-top: 15px;
+  width: 293px;
+  height: 35px;
+  color: white;
+  font-weight: bold;
+  background-color: rgb(166, 215, 235);
+  border-radius: 5px;
+  border: solid;
+  margin-bottom: 25px;
+}
+
+.or {
+  color: rgb(134, 134, 134);
+  margin-bottom: 15px;
+}
+
+.boldF {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.loginBack {
+  margin-top: 103px;
+  height: 35px;
+  background-color: rgb(248, 248, 248);
+  padding-top: 15px;
+}
+
+.grayB {
+  color: rgb(134, 134, 134);
+  font-weight: bold;
+}
+
+.signCon {
+  margin-top: 75px;
+  margin-left: 25px;
+  width: 350px;
+  height: 400px;
+  background-color: white;
+  text-align: center;
+  border: 1px solid rgb(190, 190, 190);
+}
+
+.signLog {
+  display: flex;
+  width: 350px;
+  height: 50px;
+  margin-top: 25px;
+  padding-top: 25px;
+  background-color: white;
+  border: 1px solid rgb(190, 190, 190);
+  text-align: center;
+
+  font-size: 14px;
+}
