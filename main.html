@@ -5,26 +5,168 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="main.js"></script>
     <title>Document</title>
 </head>
 <body>
-    <div id="nav">
-        <div class="logo">
-            <img src="img/logo.png" alt="">
-        </div>
-        <div>
-            <div class="icons">
-                <img src="img/home.svg" alt="">
-                <img src="img/add.svg" alt="">
-                <img src="img/heart.svg" alt="">
-                <img id="profile_logo" src="img/cat.jpg" alt="">
+    <div id="header">
+        <div id="nav">
+            <div class="logo">
+                <a href="main.html"><img src="img/logo.png" alt=""></a>
+            </div>
+            <div>
+                <div class="icons">
+                    <a href="main.html"><img src="img/home.svg" alt=""></a>
+                    <a href="#"><img src="img/add.svg" alt=""></a>
+                    <a href="#"><img src="img/heart.svg" alt=""></a>
+                    <a href="#"><img id="profile_logo" src="img/cat.jpg" alt=""></a>
+                </div>
+            </div>
+        </div>    
+    </div>
+    <div class="main">
+        <!--게시글 1번-->
+        <div class="main_left">
+            <header>
+                <div class="feed_owner">
+                    <div><img src="img/cat.jpg" alt=""></div>
+                    <div class="owner">luculent_wook</div>
+                </div>
+                <div>
+                    <img src="img/more.svg" alt="">
+                </div>
+            </header>
+            <article>
+                <img src="img/cat.jpg" alt="">
+            </article>
+            <div class="comment">
+                <div class="like">
+                    <div>
+                        <img id="feed_like" onclick="like()" src="img/heart.svg" alt="">
+                        <img src="img/comment.svg" alt="">
+                    </div>
+                    <div>
+                        <img src="img/save.svg" alt="">
+                    </div>
+                </div>
+                <div class="like_count">
+                    <div><img src="img/cat.jpg" alt=""></div>
+                    <a href="#">luculent_wook</a>
+                    <div>님</div>
+                    <a href="#">여러 명</a>
+                    <div>이 좋아합니다.</div>
+                </div>
+                <div class="view_comment">
+                    <div class="owner_comment">
+                        <a href="#">luculent_wook</a>
+                        <span>고양이는 귀엽습니다.</span>
+                    </div>
+                    <div class="all_comment">
+                        <div>
+                            <a class="view_all_comment" href="#">댓글 5개 모두 보기</a>
+                        </div>
+                        <div class="other_comment">
+                            <div>
+                                <a href="#">luculent_sso</a>
+                                <span>강아지가 더 귀엽습니다.</span>
+                            </div>
+                            <img id="comment1" onclick="comment1_like()" src="img/heart.svg" alt="">
+                        </div>
+                        <div class="other_comment">
+                            <div>
+                                <a href="#">ulimsss</a>
+                                <span>ㅈㄱㅊㅇ</span>
+                            </div>
+                            <img id="comment2" onclick="comment2_like()" src="img/heart.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="upload_time">
+                        54분 전
+                    </div>
+                </div>
+                <div class="write_comment">
+                    <div class="emoticon">
+                        <img src="img/smile.svg" alt="">
+                    </div>
+                    <div>
+                        <input type="text" name="comment_body" class="comment_body" cols="30" rows="1" placeholder="댓글 달기..."></textarea>
+                    </div>
+                    <div class="comment_btn">게시</div>
+                </div>
             </div>
         </div>
-    </div>
-    <div id="feed">
-        <article>
-            <img src="img/cat.jpg" alt="">
-        </article>
+        
+        <!-- 게시글 2번 -->
+        <div class="main_left">
+            <header>
+                <div class="feed_owner">
+                    <div><img src="img/dog.jpg" alt=""></div>
+                    <div class="owner">luculent_sso</div>
+                </div>
+                <div>
+                    <img src="img/more.svg" alt="">
+                </div>
+            </header>
+            <article>
+                <img src="img/dog.jpg" alt="">
+            </article>
+            <div class="comment">
+                <div class="like">
+                    <div>
+                        <img id="feed_like" onclick="like()" src="img/heart.svg" alt="">
+                        <img src="img/comment.svg" alt="">
+                    </div>
+                    <div>
+                        <img src="img/save.svg" alt="">
+                    </div>
+                </div>
+                <div class="like_count">
+                    <div><img src="img/dog.jpg" alt=""></div>
+                    <a href="#">luculent_sso</a>
+                    <div>님</div>
+                    <a href="#">여러 명</a>
+                    <div>이 좋아합니다.</div>
+                </div>
+                <div class="view_comment">
+                    <div class="owner_comment">
+                        <a href="#">luculent_sso</a>
+                        <span>강아지는 귀엽습니다.</span>
+                    </div>
+                    <div class="all_comment">
+                        <div>
+                            <a class="view_all_comment" href="#">댓글 5개 모두 보기</a>
+                        </div>
+                        <div class="other_comment">
+                            <div>
+                                <a href="#">luculent_wook</a>
+                                <span>고양이가 더 귀엽습니다.</span>
+                            </div>
+                            <img id="comment1" onclick="comment1_like()" src="img/heart.svg" alt="">
+                        </div>
+                        <div class="other_comment">
+                            <div>
+                                <a href="#">ulimsss</a>
+                                <span>ㅇㅈ</span>
+                            </div>
+                            <img id="comment2" onclick="comment2_like()" src="img/heart.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="upload_time">
+                        54분 전
+                    </div>
+                </div>
+                <div class="write_comment">
+                    <div class="emoticon">
+                        <img src="img/smile.svg" alt="">
+                    </div>
+                    <div>
+                        <input type="text" name="comment_body" class="comment_body" cols="30" rows="1" placeholder="댓글 달기..."></textarea>
+                    </div>
+                    <div class="comment_btn">게시</div>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>
