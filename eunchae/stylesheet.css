@@ -126,6 +126,10 @@ a:active {
   margin-bottom: 15px;
 }
 
+.boldF > a{
+  color: black;
+}
+
 .boldF {
   font-weight: bold;
   font-size: 14px;
