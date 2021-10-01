@@ -115,7 +115,7 @@ a:active {
   height: 35px;
   color: white;
   font-weight: bold;
-  background-color: rgb(166, 215, 235);
+  background-color: rgba(0, 140, 255, 0.3);
   border-radius: 5px;
   border: solid;
   margin-bottom: 25px;
